@@ -3,12 +3,8 @@ package com.singpaulee.codelab_mvp_junit_dicoding.presenter
 import com.singpaulee.codelab_mvp_junit_dicoding.model.MainModel
 import com.singpaulee.codelab_mvp_junit_dicoding.view.MainView
 
-class MainPresenter {
-    private lateinit var view: MainView
-
-    fun MainPresenter(view: MainView){
-        this.view = view
-    }
+class MainPresenter(view: MainView) {
+    private var view: MainView = view
 
     fun volume(length: Double, width: Double, height: Double): Double {
         return length / width * height
