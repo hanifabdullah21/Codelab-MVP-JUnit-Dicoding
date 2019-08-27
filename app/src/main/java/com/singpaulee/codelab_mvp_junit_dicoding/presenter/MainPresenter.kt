@@ -7,7 +7,7 @@ class MainPresenter(view: MainView) {
     private var view: MainView = view
 
     fun volume(length: Double, width: Double, height: Double): Double {
-        return length / width * height
+        return length * width * height
     }
 
     fun calculateVolume(length: Double, width: Double, height: Double) {
